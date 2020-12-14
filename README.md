@@ -1,4 +1,4 @@
-A small starter kit for your JavaScript/React projects. It includes:
+# Go to [Site](https://edunton.github.io/jumbler/publish)
 
 * Webpack + webpack-dev-server (live-reload and watcher)
 * TypeScript

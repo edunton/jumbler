@@ -91,7 +91,7 @@
   "scripts": {
     "start": "npm run dev",
     "clean:dev": "rimraf ./dist/dev",
-    "clean:prod": "rimraf ./docs",
+    "clean:prod": "rimraf ./publish",
     "watch": "npm run clean:dev & webpack --config ./webpack.config.js --mode development",
     "dev": "npm run clean:dev & webpack-dev-server",
     "build": "npm run clean:prod & webpack --config ./webpack.prod.js --mode production",
