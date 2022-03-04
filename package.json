@@ -1,5 +1,5 @@
 {
-  "name": "typescript-react-webpack-starter",
+  "name": "destiny-deck",
   "version": "0.6.7",
   "description": "A small startup repo for your JavaScript project. Webpack. TypeScript. React. Eslint. Styled-components.",
   "main": "./setup.js",

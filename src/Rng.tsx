@@ -29,6 +29,26 @@ export class Rng {
     const randomUnder1 = this.nextInt() / this.m;
     return start + Math.floor(randomUnder1 * rangeSize);
   }
+
+  shuffle<T>(array: T[]): T[] {
+    const retArr = [...array];
+    let currentIndex = retArr.length;
+    let randomIndex: number;
+  
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element...
+      const mult = this.nextFloat() % 1;
+      randomIndex = Math.floor(mult * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [retArr[currentIndex], retArr[randomIndex]] = [retArr[randomIndex], retArr[currentIndex]];
+    }
+  
+    return retArr;
+  }
 }
 
 /* eslint no-bitwise: ["error", { "allow": ["<<","&"] }] */
